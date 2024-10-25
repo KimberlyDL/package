@@ -1,3 +1,4 @@
+// src\router\AuthRoutes.ts
 const AuthRoutes = {
     path: '/auth',
     component: () => import('@/layouts/blank/BlankLayout.vue'),

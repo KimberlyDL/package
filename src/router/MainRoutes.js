@@ -1,3 +1,4 @@
+// src\router\MainRoutes.ts
 const MainRoutes = {
     path: '/main',
     meta: {

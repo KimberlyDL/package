@@ -1,6 +1,3 @@
-import type { BlogCards, tableAction,ProductTable,EarningReports } from '@/types/dashboard/index';
-
-
 import user1 from '@/assets/images/profile/user-1.jpg';
 import user2 from '@/assets/images/profile/user-2.jpg';
 import user3 from '@/assets/images/profile/user-3.jpg';
@@ -9,15 +6,16 @@ import img2 from '@/assets/images/blog/blog-img2.jpg';
 import img3 from '@/assets/images/blog/blog-img3.jpg';
 
 import { EditIcon, PlusIcon, TrashIcon } from 'vue-tabler-icons';
-//Products Table
+
+// Products Table
 import product1 from '@/assets/images/products/s1.jpg';
 import product2 from '@/assets/images/products/s2.jpg';
 import product3 from '@/assets/images/products/s3.jpg';
 import product4 from '@/assets/images/products/s4.jpg';
 import product5 from '@/assets/images/products/s5.jpg';
 
-
-const ProductTableData: ProductTable[] = [
+// Remove TypeScript type annotations and just define the array directly
+const ProductTableData = [
     {
         img: product1,
         name: 'iPhone 13 pro max-Pacific Blue-128GB storage',
@@ -70,9 +68,8 @@ const ProductTableData: ProductTable[] = [
     }
 ];
 
-
-/*--Blog Cards--*/
-const BlogCardData: BlogCards[] = [
+/* --Blog Cards-- */
+const BlogCardData = [
     {
         avatar: user1,
         coveravatar: img1,
@@ -111,8 +108,7 @@ const BlogCardData: BlogCards[] = [
     }
 ];
 
-
-const tableActionData: tableAction[] = [
+const tableActionData = [
   {
       icon: PlusIcon,
       listtitle: 'Add'
@@ -127,8 +123,8 @@ const tableActionData: tableAction[] = [
   }
 ];
 
-/*--EarningReports--*/
-const EarningReportsData: EarningReports[] = [
+/* --EarningReports-- */
+const EarningReportsData = [
   {
       icon: 'card-line-duotone',
       title: 'Bank Transfer',
@@ -168,9 +164,8 @@ const EarningReportsData: EarningReports[] = [
     color: 'warning',
     statuscolor: 'success',
     statustext: '12.55%',
-},
- 
+  },
 ];
 
-
-export {ProductTableData,BlogCardData,tableActionData,EarningReportsData}
+// Export the data as before
+export { ProductTableData, BlogCardData, tableActionData, EarningReportsData };

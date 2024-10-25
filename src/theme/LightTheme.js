@@ -1,6 +1,5 @@
-import type { ThemeTypes } from '@/types/themeTypes/ThemeType';
-
-const BLUE_THEME: ThemeTypes = {
+// src\theme\LightTheme.ts
+const BLUE_THEME = {
     name: 'BLUE_THEME',
     dark: false,
     variables: {
@@ -34,6 +33,4 @@ const BLUE_THEME: ThemeTypes = {
     }
 };
 
-
-
-export { BLUE_THEME};
+export { BLUE_THEME };
